@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Platform Revenue Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Popup Ad -->
+<script type='text/javascript' src='//pl26846440.profitableratecpm.com/fd/b0/c0/fdb0c03c1f334ec7920a6cc04b42dc50.js'></script>
+
+<!-- Banner Ad Top -->
+<div class="banner-ad top">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '5a386e9e42730ab7ba556242d70ded31',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/5a386e9e42730ab7ba556242d70ded31/invoke.js"></script>
+</div>
+
+<header>
+  <h1>Ad Revenue Calculator</h1>
+</header>
+
+<nav>
+  <button onclick="showCalc('ads')">Ads Platform Revenue</button>
+  <button onclick="showCalc('youtube')">YouTube</button>
+  <button onclick="showCalc('telegram')">Telegram</button>
+  <button onclick="showCalc('facebook')">Facebook</button>
+  <button onclick="showCalc('tiktok')">TikTok</button>
+  <button onclick="showCalc('twitter')">Twitter (X)</button>
+  <button onclick="showCalc('instagram')">Instagram</button>
+  <button onclick="showCalc('snapchat')">Snapchat</button>
+</nav>
+
+<div class="container">
+  <!-- Middle Ad -->
+  <div class="banner-ad middle">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '5a386e9e42730ab7ba556242d70ded31',
+        'format' : 'iframe',
+        'height' : 60,
+        'width' : 468,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/5a386e9e42730ab7ba556242d70ded31/invoke.js"></script>
+  </div>
+
+  <form id="calcForm">
+    <label for="views">Enter Monthly Views:</label>
+    <input type="number" id="views" required />
+    <input type="hidden" id="platform" value="ads">
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result"></div>
+
+  <p class="powered">Powered by OptimoCode</p>
+</div>
+
+<!-- Bottom Ad -->
+<div class="banner-ad bottom">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '5a386e9e42730ab7ba556242d70ded31',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/5a386e9e42730ab7ba556242d70ded31/invoke.js"></script>
+</div>
+
+<div class="social-bar" id="socialBar" onclick="window.open('https://t.me/+pIyhnogtWV1lMmJl','_blank')">Join VIP Channel</div>
+
+<div class="follow-section">
+  <p>Follow</p>
+  <a href="https://t.me/TheSafayetOfficial/459" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
+  </a>
+</div>
+
+<footer>
+  &copy; 2025 RevenueCalc by Safayet
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

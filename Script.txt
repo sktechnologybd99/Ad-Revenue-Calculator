@@ -1,0 +1,56 @@
+const cpms = {
+  ads: {
+    Adstrra: 1,
+    Monetag: 1.5,
+    Adsness: 2,
+    AdMob: 0.5,
+    ADCOLONY: 1,
+    Utbrain: 1,
+    BuySellAds: 1,
+    adpushup: 5,
+    hilltopads: 2,
+  },
+  youtube: 2,
+  telegram: 0.3,
+  facebook: 5,
+  tiktok: 3,
+  twitter: 1.2,
+  instagram: 2,
+  snapchat: 3,
+};
+
+const form = document.getElementById("calcForm");
+const viewsInput = document.getElementById("views");
+const platformInput = document.getElementById("platform");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const views = parseInt(viewsInput.value);
+  const platform = platformInput.value;
+
+  if (platform === "ads") {
+    let total = 0;
+    for (const net in cpms.ads) {
+      total += (views / 1000) * cpms.ads[net];
+    }
+    result.innerHTML = `Estimated Total: <span style="color:green">$${total.toFixed(2)}</span>`;
+  } else {
+    const cpm = cpms[platform];
+    const earnings = (views / 1000) * cpm;
+    result.innerHTML = `Estimated Earnings: <span style="color:green">$${earnings.toFixed(2)}</span>`;
+  }
+});
+
+function showCalc(name) {
+  platformInput.value = name;
+  result.innerHTML = "";
+  viewsInput.value = "";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Social bar popup every 60s
+setInterval(() => {
+  const bar = document.getElementById("socialBar");
+  bar.style.display = "block";
+}, 60000);
